@@ -3,38 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros passos com o DOM</title>
+    <title>Eventos DOM</title>
     <style>
-         body{
-            background-color: rgba(40, 20, 224, 0.44);
-            font: normal 10pt Arial;
-         }    
+        div#area {
+            background-color:rgb(40, 65, 56);
+            color: white;
+            width: 150px;
+        }
+        body{
+            background-color: rgba(114, 105, 192, 0.44);
+            font: normal 30pt Arial;
+        }   
     </style>
 </head>
 <body>
-    <h1>Iniciando  estudos com o DOM</h1>
-    <p>Aqui vai o resultado teste.</p>
-    <p>Segundo parágrafo.</p>
-    <div id="msg">Clique em mim</div>
-    <script>
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[1]
-        var msg = window.document.getElementById('msg')
-        msg.style.background = 'green'
-        var msg = window.document.querySelector('div#msg')
-        msg.style.background = 'blue'
-        msg.style.color = 'red'
-        msg.style.font = 'Arial'
-         
-        
-        //corpo.style.background = 'white'
-        //p.style.color = 'blue'
-        //window.document.write('Está escrito assim: '  +  p1.innerText)
-        //window.alert(p1.innerText)
-       // window.document.write('Olá <strong> mundo</strong>.')
-       //window.document.write(window.document.URL)
-       // window.document.write(window.document.appName) 
-       // window.document.write(window.document.title)
-    </script>
+    <div id="area">
+           Interaja
+    </div>
+ 
 </body>
 </html>
