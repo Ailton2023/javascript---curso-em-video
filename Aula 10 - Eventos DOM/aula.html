@@ -23,13 +23,26 @@
 </head>
 <body>
  <p><a href="https://www.w3schools.com/js/js_events.asp">site da teste de js</a></p>
-    <div id="area" onclick="clicar()">
+
+   <div id="area">
            Interaja
     </div>
+
  <script>
+    var area = window.document.getElementById ('area')
+    area.addEventListener('click', clicar)
+    area.addEventListener('mouseenter', entrar)
+    area.addEventListener('mouseout', sair)
+
     function clicar (){
-        var area = window.document.getElementById ('area')
-        area.innerText = 'Seja um Oficial da Marinha!'
+         area.innerText = 'Seja um Oficial da Marinha!'
+         area.style.background = 'red'
+        }
+    function entrar(){
+        area.innerText = 'Entrou'
+    }
+    function sair(){
+      area.innerText = 'Sair'
     }
 </script>
 </body>
