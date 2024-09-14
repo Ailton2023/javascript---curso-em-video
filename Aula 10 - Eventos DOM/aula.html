@@ -8,18 +8,29 @@
         div#area {
             background-color:rgb(40, 65, 56);
             color: white;
-            width: 150px;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font: 15px;
         }
+
         body{
             background-color: rgba(114, 105, 192, 0.44);
-            font: normal 30pt Arial;
+      
         }   
     </style>
 </head>
 <body>
-    <div id="area">
+ <p><a href="https://www.w3schools.com/js/js_events.asp">site da teste de js</a></p>
+    <div id="area" onclick="clicar()">
            Interaja
     </div>
- 
+ <script>
+    function clicar (){
+        var area = window.document.getElementById ('area')
+        area.innerText = 'Seja um Oficial da Marinha!'
+    }
+</script>
 </body>
 </html>
